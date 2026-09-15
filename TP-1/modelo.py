@@ -38,8 +38,8 @@ class SistemaReservas:
                     self.lista_reservas.append(Reserva(nombre_pasajero, vuelo))
                     return True
                 else: 
-                    return False 
-                
+                    return self.vista.mostrar_mensaje("No hay asientos disponibles para este vuelo")
+            return self.vista.mostrar_mensaje("No se encontro el vuelo solicitado")
         return False
     
     def obtener_reservas(self):

@@ -11,7 +11,7 @@ class VistaConsolaReservas:
     
     def solicitar_datos_reserva(self):
         nombre = input("escribi tu nombre: ")
-        numero = input("escribi un numero: ")
+        numero = int(input("escribi el numero de vuelo: "))
         return nombre, numero
     
     def mostrar_vuelos(self, lista_vuelos):
