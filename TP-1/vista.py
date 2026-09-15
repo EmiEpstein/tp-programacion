@@ -10,8 +10,8 @@ class VistaConsolaReservas:
         print(mensaje)
     
     def solicitar_datos_reserva(self):
-        nombre = input("escribi tu nombre")
-        numero = input("escribi un numero")
+        nombre = input("escribi tu nombre: ")
+        numero = input("escribi un numero: ")
         return nombre, numero
     
     def mostrar_vuelos(self, lista_vuelos):
@@ -20,4 +20,4 @@ class VistaConsolaReservas:
             
     def mostrar_reservas(self, lista_reservas):
         for reserva in lista_reservas:
-            print(f"Reserva a nombre del pasajero {reserva.nombre_pasajero} con numero de vuelo numero{reserva.vuelo.num_vuelo} con destino {reserva.vuelo.destino}")
+            print(f"Reserva a nombre del pasajero {reserva.nombre_pasajero} con numero de vuelo numero {reserva.vuelo.num_vuelo} con destino {reserva.vuelo.destino}")

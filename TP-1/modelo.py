@@ -15,6 +15,15 @@ class SistemaReservas:
         self.lista_vuelos = []
         self.lista_reservas = []
         
+        # --- DATOS DE PRUEBA ---
+        # 1. Fabricamos un par de vuelos (ajustá los nombres de los atributos a los tuyos)
+        vuelo_1 = Vuelo("1", "Buenos Aires", 10)
+        vuelo_2 = Vuelo("2", "Santiago del Estero", 5)
+        
+        # 2. Los guardamos en la lista de la "cocina"
+        self.lista_vuelos.append(vuelo_1)
+        self.lista_vuelos.append(vuelo_2)
+        
     def agregar_vuelo(self, vuelo):
         self.lista_vuelos.append(vuelo)
     
